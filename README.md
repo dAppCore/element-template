@@ -1,6 +1,6 @@
 # Core Element Template
 
-This repository is a template for developers to create custom HTML elements for the core web3 framework. It includes a Go backend, an Angular custom element, and a full release cycle configuration.
+This repository is a template for developers to create custom HTML elements for the core web3 framework. It includes a Go backend, a Lit-based custom element, and a full release cycle configuration.
 
 ## Getting Started
 
@@ -21,18 +21,18 @@ This repository is a template for developers to create custom HTML elements for 
     ```bash
     go run ./cmd/demo-cli serve
     ```
-    This will start the Go backend and serve the Angular custom element.
+    This will start the Go backend and serve the Lit custom element.
 
 ## Building the Custom Element
 
-To build the Angular custom element, run the following command:
+To build the Lit custom element, run the following command:
 
 ```bash
 cd ui
 npm run build
 ```
 
-This will create a single JavaScript file in the `dist` directory that you can use in any HTML page.
+This will create a JavaScript file in the `dist` directory that you can use in any HTML page.
 
 ## Contributing
 
