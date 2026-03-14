@@ -1,9 +1,9 @@
-module github.com/your-username/core-element-template
+module forge.lthn.ai/core/element-template
 
-go 1.24.3
+go 1.26.0
 
 require (
-	github.com/inconshreveable/mousetrap v1.1.0 // indirect
-	github.com/spf13/cobra v1.10.1 // indirect
-	github.com/spf13/pflag v1.0.10 // indirect
+	forge.lthn.ai/core/go-api v0.1.0
+	forge.lthn.ai/core/go-log v0.0.1
+	forge.lthn.ai/core/go-ws v0.1.3
 )

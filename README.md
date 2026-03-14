@@ -1,43 +1,52 @@
 # Core Element Template
 
-This repository is a template for developers to create custom HTML elements for the core web3 framework. It includes a Go backend, a Lit-based custom element, and a full release cycle configuration.
+Starter template for building custom HTML elements backed by a Go API. Part of the [Core ecosystem](https://core.help).
 
-## Getting Started
-
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/your-username/core-element-template.git
-    ```
-
-2.  **Install the dependencies:**
-    ```bash
-    cd core-element-template
-    go mod tidy
-    cd ui
-    npm install
-    ```
-
-3.  **Run the development server:**
-    ```bash
-    go run ./cmd/demo-cli serve
-    ```
-    This will start the Go backend and serve the Lit custom element.
-
-## Building the Custom Element
-
-To build the Lit custom element, run the following command:
+## Quick Start
 
 ```bash
-cd ui
-npm run build
+# Clone and rename
+git clone https://forge.lthn.ai/core/element-template.git my-element
+cd my-element
+
+# Install UI dependencies and build
+cd ui && npm install && npm run build && cd ..
+
+# Run
+go run . --port 8080
 ```
 
-This will create a JavaScript file in the `dist` directory that you can use in any HTML page.
+Open `http://localhost:8080` — you'll see the `<core-demo-element>` fetching data from the Go API.
 
-## Contributing
+## What's Included
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+| Component | Technology | Purpose |
+|-----------|-----------|---------|
+| Go backend | core/go-api (Gin) | REST API with CORS, middleware |
+| Custom element | Lit 3 | Self-contained web component |
+| Build config | `.core/build.yaml` | Cross-platform binary builds |
 
-## License
+## Making It Yours
 
-This project is licensed under the EUPL-1.2 License - see the [LICENSE](LICENSE) file for details.
+1. Update `go.mod` module path
+2. Rename `DemoProvider` in `provider.go` — implement your API
+3. Rename `CoreDemoElement` in `ui/src/index.ts` — implement your UI
+4. Update the element tag in `ui/index.html`
+
+## Service Provider Pattern
+
+The `DemoProvider` implements `api.RouteGroup`:
+
+```go
+func (p *DemoProvider) Name() string { return "demo" }
+func (p *DemoProvider) BasePath() string { return "/api/v1/demo" }
+func (p *DemoProvider) RegisterRoutes(rg *gin.RouterGroup) {
+    rg.GET("/hello", p.hello)
+}
+```
+
+Register it with `engine.Register(&DemoProvider{})` and it gets middleware, CORS, and OpenAPI for free. The same provider can plug into core/ide's registry.
+
+## Licence
+
+EUPL-1.2

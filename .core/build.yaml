@@ -1,0 +1,7 @@
+project: element-template
+binary: core-element-template
+targets:
+  - os: darwin
+    arch: arm64
+  - os: linux
+    arch: amd64
