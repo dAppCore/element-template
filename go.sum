@@ -1,7 +1,7 @@
-forge.lthn.ai/core/api v0.1.4 h1:RvjI2VZwg1Jl2XA0yZI8oSrydOpn09YPtCd6Izd6gCM=
-forge.lthn.ai/core/api v0.1.4/go.mod h1:BELpD26fF9lDnEdv0EyRDsvC+qtaQcC29yBvfZSh+TA=
-forge.lthn.ai/core/go-io v0.1.5 h1:+XJ1YhaGGFLGtcNbPtVlndTjk+pO0Ydi2hRDj5/cHOM=
-forge.lthn.ai/core/go-io v0.1.5/go.mod h1:FRtXSsi8W+U9vewCU+LBAqqbIj3wjXA4dBdSv3SAtWI=
+forge.lthn.ai/core/api v0.1.6 h1:DwJ9s/B5yEAVx497oB6Ja9wlj4qZ6HLvsyZOcN7RivA=
+forge.lthn.ai/core/api v0.1.6/go.mod h1:l7EeqKgu3New2kAeg65We8KJoVlzkO0P3bK7tQNniXg=
+forge.lthn.ai/core/go-io v0.1.7 h1:Tdb6sqh+zz1lsGJaNX9RFWM6MJ/RhSAyxfulLXrJsbk=
+forge.lthn.ai/core/go-io v0.1.7/go.mod h1:8lRLFk4Dnp5cR/Cyzh9WclD5566TbpdRgwcH7UZLWn4=
 forge.lthn.ai/core/go-log v0.0.4 h1:KTuCEPgFmuM8KJfnyQ8vPOU1Jg654W74h8IJvfQMfv0=
 forge.lthn.ai/core/go-log v0.0.4/go.mod h1:r14MXKOD3LF/sI8XUJQhRk/SZHBE7jAFVuCfgkXoZPw=
 github.com/99designs/gqlgen v0.17.88 h1:neMQDgehMwT1vYIOx/w5ZYPUU/iMNAJzRO44I5Intoc=
