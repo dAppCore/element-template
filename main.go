@@ -17,8 +17,8 @@ import (
 	"os/signal"
 	"syscall"
 
-	api "forge.lthn.ai/core/api"
-	"forge.lthn.ai/core/go-log"
+	api "dappco.re/go/api"
+	"dappco.re/go/log"
 	"github.com/gin-gonic/gin"
 )
 
