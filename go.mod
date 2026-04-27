@@ -1,15 +1,19 @@
-module forge.lthn.ai/core/element-template
+module dappco.re/go/element-template
 
 go 1.26.0
 
-require (
-	forge.lthn.ai/core/api v0.1.6
-	forge.lthn.ai/core/go-log v0.0.4
-	github.com/gin-gonic/gin v1.12.0
-)
+require github.com/gin-gonic/gin v1.12.0
 
 require (
-	forge.lthn.ai/core/go-io v0.1.7 // indirect
+	dappco.re/go/api v0.8.0-alpha.1
+	dappco.re/go/core v0.8.0-alpha.1
+	dappco.re/go/i18n v0.8.0-alpha.1
+	dappco.re/go/io v0.8.0-alpha.1
+	dappco.re/go/log v0.8.0-alpha.1
+	dappco.re/go/process v0.8.0-alpha.1
+	dappco.re/go/scm v0.8.0-alpha.1
+	dappco.re/go/store v0.8.0-alpha.1
+	dappco.re/go/ws v0.8.0-alpha.1
 	github.com/99designs/gqlgen v0.17.88 // indirect
 	github.com/KyleBanks/depth v1.2.1 // indirect
 	github.com/agnivade/levenshtein v1.2.1 // indirect
