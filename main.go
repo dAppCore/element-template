@@ -10,30 +10,27 @@ package main
 
 import (
 	"context"
-	"embed"
 	"flag"
-	"io/fs"
 	"os"
 	"os/signal"
 	"syscall"
 
 	api "dappco.re/go/api"
 	"dappco.re/go/log"
-	"github.com/gin-gonic/gin"
 )
-
-//go:embed all:ui/dist
-var uiAssets embed.FS
 
 func main() {
 	port := flag.String("port", "8080", "HTTP server port")
 	flag.Parse()
 
-	logger := log.New("element-template")
+	logger := log.New(log.Options{Level: log.LevelInfo})
+	addr := ":" + *port
 
 	// Create API engine with middleware
 	engine, err := api.New(
+		api.WithAddr(addr),
 		api.WithCORS(),
+		api.WithStatic("/", "ui/dist"),
 	)
 	if err != nil {
 		logger.Error("failed to create API engine", "error", err)
@@ -43,26 +40,15 @@ func main() {
 	// Register the demo provider
 	engine.Register(&DemoProvider{})
 
-	// Serve the Lit custom element UI as static files
-	staticFS, err := fs.Sub(uiAssets, "ui/dist")
-	if err != nil {
-		logger.Error("failed to load UI assets", "error", err)
-		os.Exit(1)
-	}
-	engine.Router().NoRoute(gin.WrapH(
-		noCache(staticFS),
-	))
-
 	// Start server
 	ctx, cancel := signal.NotifyContext(context.Background(),
 		syscall.SIGINT, syscall.SIGTERM)
 	defer cancel()
 
-	addr := ":" + *port
 	logger.Info("starting server", "addr", addr)
 
 	go func() {
-		if err := engine.Serve(ctx, addr); err != nil {
+		if err := engine.Serve(ctx); err != nil {
 			logger.Error("server error", "error", err)
 		}
 	}()
