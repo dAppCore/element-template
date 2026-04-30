@@ -100,30 +100,3 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace dappco.re/go => ../go
-
-replace dappco.re/go/api => ../api
-
-replace dappco.re/go/cli => ../cli
-
-replace dappco.re/go/core => ../api/internal/compat/core
-
-replace dappco.re/go/core/miner => ../api/internal/compat/miner
-
-replace dappco.re/go/i18n => ../go-i18n
-
-replace dappco.re/go/inference => ../go-inference
-
-replace dappco.re/go/io => ../go-io
-
-replace dappco.re/go/log => ../go-log
-
-replace dappco.re/go/miner => ../go-miner
-
-replace dappco.re/go/process => ../go-process
-
-replace dappco.re/go/proxy => ../go-proxy
-
-replace dappco.re/go/scm => ../go-scm
-
-replace dappco.re/go/ws => ../go-ws
