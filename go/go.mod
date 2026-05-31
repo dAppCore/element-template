@@ -12,7 +12,7 @@ require (
 )
 
 require (
-	dappco.re/go v0.9.0
+	dappco.re/go v0.10.3
 	dappco.re/go/api v0.9.0
 	dappco.re/go/log v0.9.0
 	github.com/99designs/gqlgen v0.17.88 // indirect
