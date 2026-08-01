@@ -16,7 +16,7 @@ import (
 
 	core "dappco.re/go"
 	api "dappco.re/go/api"
-	"dappco.re/go/log"
+	log "dappco.re/go/log"
 )
 
 func main() {
@@ -29,7 +29,11 @@ func main() {
 	// Create API engine with middleware
 	engine, err := api.New(
 		api.WithAddr(addr),
-		api.WithCORS(),
+		// api v0.19.0's WithCORS takes explicit origins — an empty call now
+		// panics ("conflict settings: all origins disabled") instead of
+		// defaulting to allow-all. "*" preserves this template's original
+		// permissive-dev-server behaviour.
+		api.WithCORS("*"),
 		api.WithStatic("/", "ui/dist"),
 	)
 	if err != nil {
