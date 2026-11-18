@@ -14,9 +14,9 @@ import (
 	"os/signal"
 	"syscall"
 
-	core "dappco.re/go"
-	api "dappco.re/go/api"
-	log "dappco.re/go/log"
+	core "github.com/dappcore/go"
+	api "github.com/dappcore/api/go"
+	log "github.com/dappcore/go-log/go"
 )
 
 func main() {

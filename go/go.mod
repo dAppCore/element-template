@@ -1,19 +1,16 @@
-module dappco.re/go/element-template
+module github.com/dappcore/element-template/go
 
 go 1.26.2
 
 require github.com/gin-gonic/gin v1.12.0
 
 require (
-	dappco.re/go/process v0.16.1 // indirect
 	github.com/coder/websocket v1.8.15 // indirect
+	github.com/dappcore/go-process/go v0.17.0 // indirect
 	github.com/go-openapi/swag/pools v0.28.0 // indirect
 )
 
 require (
-	dappco.re/go v0.12.0
-	dappco.re/go/api v0.19.0
-	dappco.re/go/log v0.13.1
 	github.com/99designs/gqlgen v0.17.94 // indirect
 	github.com/KyleBanks/depth v1.2.1 // indirect
 	github.com/agnivade/levenshtein v1.2.1 // indirect
@@ -27,6 +24,9 @@ require (
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
 	github.com/cloudwego/base64x v0.1.7 // indirect
 	github.com/coreos/go-oidc/v3 v3.20.0 // indirect
+	github.com/dappcore/api/go v0.20.0
+	github.com/dappcore/go v0.14.0
+	github.com/dappcore/go-log/go v0.14.0
 	github.com/gabriel-vasile/mimetype v1.4.15 // indirect
 	github.com/gin-contrib/authz v1.0.7 // indirect
 	github.com/gin-contrib/cors v1.7.7 // indirect

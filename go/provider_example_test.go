@@ -3,7 +3,7 @@
 package main
 
 import (
-	core "dappco.re/go"
+	core "github.com/dappcore/go"
 )
 
 // ExampleDemoProvider_Name shows how to retrieve a provider's identifier.

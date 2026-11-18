@@ -6,7 +6,7 @@
 main.go              ── engine bootstrap, signal handling, log setup
    │
    ▼
-api.Engine           (dappco.re/go/api) ── route registry, middleware, serve loop
+api.Engine           (github.com/dappcore/api/go) ── route registry, middleware, serve loop
    │
    ▼
 DemoProvider         (provider.go) ── implements api.RouteGroup
