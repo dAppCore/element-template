@@ -1,11 +1,3 @@
-dappco.re/go v0.12.0 h1:lotJop5nvhrIQ1J2L5IP37H72ihnQnIjNzFT0iMEfx0=
-dappco.re/go v0.12.0/go.mod h1:xapr7fLK4/9Pu2iSCr4qZuIuatmtx1j56zS/oPDbGyQ=
-dappco.re/go/api v0.19.0 h1:vhkSRaUpDEz7Jm8tWbwWHvz1f4+TiO82JK8Pytv/sEk=
-dappco.re/go/api v0.19.0/go.mod h1:Q0IEARpCTgQjOU6eGZTG2jq0WLI4GJ+eCt+Ys3n/hxg=
-dappco.re/go/log v0.13.1 h1:sfrB1hrxODsCo0A8psIvBqDkQD2mpoQ8S5S72zO2KlI=
-dappco.re/go/log v0.13.1/go.mod h1:FBMMEdmIvbXfvv3qOdW6acFnwMFgTw56csevEIELi/c=
-dappco.re/go/process v0.16.1 h1:CMsiDrY7cMKd8B9UtUh0WIG9FkuNJ2wlz2x80KS20p4=
-dappco.re/go/process v0.16.1/go.mod h1:GgES0/Y75iRdrxbWizxyipf7fdz4W4LB+2Qp5Yu9Owk=
 github.com/99designs/gqlgen v0.17.94 h1:+3EUDVgX/8gDyDL+7NUqCo4cy2ylylwW0GvR1dGiEsA=
 github.com/99designs/gqlgen v0.17.94/go.mod h1:o+XaAMpPA/AX4rqeiK03tZUb/5T+WCgpRDD4aujgdas=
 github.com/KyleBanks/depth v1.2.1 h1:5h8fQADFrWtarTdtDudMmGsC7GPbOAu6RVB3ffsVFHc=
@@ -38,6 +30,14 @@ github.com/coder/websocket v1.8.15 h1:6B2JPeOGlpff2Uz6vOEH1Vzpi0iUz20A+lPVhPHtNU
 github.com/coder/websocket v1.8.15/go.mod h1:NX3SzP+inril6yawo5CQXx8+fk145lPDC6pumgx0mVg=
 github.com/coreos/go-oidc/v3 v3.20.0 h1:EtE0WIBHk03N+DqGkY4+UONzzZHk7amKt6IyNd7OsZE=
 github.com/coreos/go-oidc/v3 v3.20.0/go.mod h1:DYCf24+ncYi+XkIH97GY1+dqoRlbaSI26KVTCI9SrY4=
+github.com/dappcore/api/go v0.20.0 h1:r45v7+ra7FL2nIJyk66TuFepj3165uM4e6QKzeX6i6g=
+github.com/dappcore/api/go v0.20.0/go.mod h1:6RFvPXWt1MTw8ypjN1sxXAH5ZsKPVq0TRQxZO/vt3io=
+github.com/dappcore/go v0.14.0 h1:xC8tLIo0iqiZmJA+hEyKQSZYLpfrGHRiM4k2WcipXdk=
+github.com/dappcore/go v0.14.0/go.mod h1:0wbxM1oMhcDWzFXP8iOuC90oW8/xt4mqJjElZ+cOVWI=
+github.com/dappcore/go-log/go v0.14.0 h1:RMLAADMns39B9EnCFlCdu8hSViMhtzIbA7deFGkz7t0=
+github.com/dappcore/go-log/go v0.14.0/go.mod h1:sc+3dEKFmpNB4ooxAd4Buj09isT0lSOJFq2RB+AkJzY=
+github.com/dappcore/go-process/go v0.17.0 h1:ZkjVBhdJ9D61OoJMbF7KTIOmFFPFpNz/dmnz9Bt4Suo=
+github.com/dappcore/go-process/go v0.17.0/go.mod h1:1j9is86JtYFHnNdeSP8ArMUJFt0PYSJclTPxn/V1W34=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc h1:U9qPSI2PIWSS1VwoXQT9A3Wy9MM3WgvqSxFWenqJduM=

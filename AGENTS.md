@@ -1,12 +1,12 @@
 # AGENTS.md — element-template
 
-A canonical scaffold for a `dappco.re/go/api` service provider.
+A canonical scaffold for a `github.com/dappcore/api/go` service provider.
 
 ## What this is
 
 `element-template` demonstrates the smallest viable service-provider shape:
 a `DemoProvider` struct implementing `api.RouteGroup` (Name / BasePath /
-RegisterRoutes), wired into a `dappco.re/go/api` engine that serves both
+RegisterRoutes), wired into a `github.com/dappcore/api/go` engine that serves both
 the JSON API and a Lit custom-element frontend.
 
 Copy this repo as the starting point for new providers — replace
@@ -23,9 +23,9 @@ real frontend, and you have a v0.9.0-shaped service.
 
 ## Dependencies (v0.9.0)
 
-- `dappco.re/go`        — core primitives, Exit, Println
-- `dappco.re/go/api`    — API engine + RouteGroup contract
-- `dappco.re/go/log`    — structured logger
+- `github.com/dappcore/go`        — core primitives, Exit, Println
+- `github.com/dappcore/api/go`    — API engine + RouteGroup contract
+- `github.com/dappcore/go-log/go`    — structured logger
 
 ## Audit contract
 

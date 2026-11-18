@@ -1,6 +1,6 @@
 # element-template — docs
 
-Canonical scaffold for a `dappco.re/go/api` service provider with a Lit
+Canonical scaffold for a `github.com/dappcore/api/go` service provider with a Lit
 custom-element frontend.
 
 - [architecture.md](architecture.md) — package structure + responsibilities
